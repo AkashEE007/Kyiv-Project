@@ -1,4 +1,19 @@
-BoxLayoutExample:
+AnchorLayoutExample:
+<AnchorLayoutExample>:
+    #Can take right, left, center, center by default
+    anchor_x: "center"
+
+    #Can take top, bottom, center
+    anchor_y: "top"
+    BoxLayout:
+        size_hint: .2, .2
+        Button:
+            text: "A"
+            #size_hint: .1, .1
+        Button:
+            text: "B"
+            #size_hint: .1, .1
+
 <BoxLayoutExample>:
     orientation: "horizontal"
     Button:
