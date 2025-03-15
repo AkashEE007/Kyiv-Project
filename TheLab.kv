@@ -1,1 +1,31 @@
-MainWidget:
+BoxLayoutExample:
+<BoxLayoutExample>:
+    orientation: "horizontal"
+    Button:
+        text: "Button1"
+        size_hint: .5, None
+        #size: "100dp", "400dp"
+        #width: "100dp"
+        height: "400dp"
+        #pos_hint: {"x": .75}
+        #pos_hint: {"right": .75}   #Takes right edge as reference
+        pos_hint: {"center_x": .5}  #Takes center x as reference
+        #pos_hint: {"top": .5}      #Takes top edge as reference
+        pos_hint: {"center_y": .5}  #Takes center y as reference
+    Button:
+        text: "Button2"
+        size_hint: 1, 2
+    Button:
+        text: "Button3"
+
+<MainWidget>:
+    Button:
+        text: "Button"
+        size: "100dp", "80dp"
+        pos: "100dp", "200dp"
+        color: 0, 1, 0, 100
+    Label:
+        text: "Hello Bro"
+        size: "100dp", "80dp"
+        pos: "200dp", "200dp"
+        color: 1, 0, 0, 100
