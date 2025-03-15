@@ -12,11 +12,29 @@ BoxLayoutExample:
         pos_hint: {"center_x": .5}  #Takes center x as reference
         #pos_hint: {"top": .5}      #Takes top edge as reference
         pos_hint: {"center_y": .5}  #Takes center y as reference
-    Button:
-        text: "Button2"
-        size_hint: 1, 2
-    Button:
-        text: "Button3"
+
+    BoxLayout:
+        orientation: "vertical"
+        spacing: "10dp"
+        BoxLayout:
+            orientation: "horizontal"
+            BoxLayout:
+                Button:
+                    text: "Button"
+                Button:
+                    text: "Button"
+            Button:
+                text: "Button"
+            Button:
+                text: "Button"
+        Button:
+            text: "Button2"
+        Button:
+            text: "Button3"
+        Button:
+            text: "Button4"
+        Button:
+            text: "Button5"
 
 <MainWidget>:
     Button:
